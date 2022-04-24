@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 :root {
-  --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
-
-  --color-black: #202123;
+  --font-family-sans: 'Open Sans', sans-serif;
+  --font-family-josefin: 'Josefin Sans', sans-serif;
+  --color-black: black;
   --color-dark-gray: #32373e;
   --color-gray: #697a90;
   --color-light-gray: #b4bcc7;

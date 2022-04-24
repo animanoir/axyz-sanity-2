@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import Icon from "./icon";
 import { cn } from "../lib/helpers";
+import LastFmData from "./lastFmData";
 
 import * as styles from "./header.module.css";
 
@@ -10,7 +11,8 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
     <div className={styles.wrapper}>
       <div className={styles.branding}>
         <Link to="/">{siteTitle}</Link>
-      </div>
+        <LastFmData />
+        </div>
 
       <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>
         <Icon symbol="hamburger" />
@@ -19,7 +21,16 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <Link to="/archive/">Archive</Link>
+            <Link to="/archive/">About</Link>
+          </li>
+          <li>
+            <Link to="/archive/">Proyects</Link>
+          </li>
+          <li>
+            <Link to="/archive/">Experiments</Link>
+          </li>
+          <li>
+            <Link to="/archive/">Contact</Link>
           </li>
         </ul>
       </nav>

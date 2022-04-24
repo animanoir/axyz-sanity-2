@@ -1,0 +1,21 @@
+@import '../styles/custom-properties.css';
+
+.wrapper {
+  font-size: 1rem;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.nowListening {
+  color: rgba(255, 255, 255, 0.308);
+  margin: 0;
+  font-family: var(--font-family-sans);
+}
+
+.artistName {
+  color: var(--color-darkWhite);
+  margin: 0 !important;
+  font-family: 'Josefin Sans', sans-serif;
+}
