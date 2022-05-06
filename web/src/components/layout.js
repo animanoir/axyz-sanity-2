@@ -5,10 +5,10 @@ import ThreeCanvas from "./three-canvas";
 import "../styles/layout.css";
 import * as styles from "./layout.module.css";
 
-const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
+const Layout = ({ children, onHideNav, onShowNav, showNav }) => (
   <>
   <div className={styles.wrapper}>
-    <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
+    <Header siteTitle="Óscar A. Montiel" onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
     <main className={styles.content}>
       <ThreeCanvas />
       {children}

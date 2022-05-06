@@ -1,6 +1,8 @@
 import { graphql, StaticQuery } from "gatsby";
 import React, { useState } from "react";
+import Helmet from 'react-helmet';
 import Layout from "../components/layout";
+import favicon from '../images/favicon.ico';
 
 const query = graphql`
   query SiteTitleQuery {
@@ -28,13 +30,18 @@ function LayoutContainer(props) {
           );
         }
         return (
-          <Layout
+          <>
+            <Helmet>
+              <link rel="icon" href={favicon} />
+            </Helmet>
+            <Layout
             {...props}
             showNav={showNav}
             siteTitle={data.site.title}
             onHideNav={handleHideNav}
             onShowNav={handleShowNav}
-          />
+            />
+          </>
         );
       }}
     />

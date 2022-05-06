@@ -32,7 +32,7 @@ function Dots() {
     // Precompute initial distances with octagonal offset
     const right = new THREE.Vector3(1, 0, 0)
     const distances = positions.map((pos) => {
-      return pos.length() + Math.cos(pos.angleTo(right) * 8) * 0.5
+      return pos.length() + Math.sin(pos.angleTo(right) * 800) * 0.5
     })
     return { vec, transform, positions, distances }
   }, [])

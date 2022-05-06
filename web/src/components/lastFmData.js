@@ -57,7 +57,7 @@ export const LastFmData = () => {
       <div className={styles.wrapper}>
         <p className={styles.nowListening}>Listening now to:</p>
         <p className={styles.artistName}>
-          {songName} <span className="actualmente-escuchando">by</span>{' '}
+          {songName} <span className={styles.nowListening}>by</span>{' '}
           {artistName}
         </p>
       </div>

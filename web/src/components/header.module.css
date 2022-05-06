@@ -66,8 +66,9 @@
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-  font-size: var(--font-large-size);
+  /* font-size: var(--font-large-size); */
   font-style: italic;
+  font-size: 1.5rem;
 
   @nest & ul {
     margin: 0;
