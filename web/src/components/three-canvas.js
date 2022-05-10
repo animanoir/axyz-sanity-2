@@ -3,6 +3,8 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import * as styles from './three.module.css'
 
+
+
 const roundedSquareWave = (t, delta, a, f) => {
   return ((2 * a) / Math.PI) * Math.atan(Math.sin(2 * Math.PI * t * f) / delta)
 }
@@ -60,7 +62,7 @@ function Dots() {
   return (
     <instancedMesh ref={ref} args={[null, null, 10000]}>
       <circleBufferGeometry args={[0.15]} />
-      <meshBasicMaterial />
+      <meshBasicMaterial  color='hsl(50%, 50%, 50%)'/>
     </instancedMesh>
   )
 }

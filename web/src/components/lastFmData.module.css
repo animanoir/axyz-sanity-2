@@ -6,12 +6,17 @@
   align-items: baseline;
   flex-direction: column;
   line-height: 1.2;
+  font-family: var(--font-family-open);
+  letter-spacing: initial;
+  font-size: 0.95rem;
 }
 
 .nowListening {
   color: rgba(255, 255, 255, 0.308);
   margin: 0;
-  font-family: var(--font-family-sans);
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  font-family: var(--font-family-josefin);
 }
 
 .artistName {

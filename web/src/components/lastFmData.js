@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 // import gif from '../../content/assets/lastfm-nowPlaying.gif'
 import * as styles from './lastFmData.module.css'
+import soundBars from '../images/soundbars.gif'
 
 export const LastFmData = () => {
   const [lfmData, updateLfmData] = useState({})
@@ -55,11 +56,13 @@ export const LastFmData = () => {
 
     return (
       <div className={styles.wrapper}>
-        <p className={styles.nowListening}>Listening now to:</p>
+        <p className={styles.nowListening} style={{marginBottom: '0.2rem'}}>Listening now to:</p>
         <p className={styles.artistName}>
           {songName} <span className={styles.nowListening}>by</span>{' '}
           {artistName}
+          <img style={{marginLeft: '0.5rem'}} src={soundBars} alt="Sound bars" className={styles.soundBars} />
         </p>
+
       </div>
     )
   }

@@ -3,6 +3,7 @@ import React from "react";
 import Icon from "./icon";
 import { cn } from "../lib/helpers";
 import LastFmData from "./lastFmData";
+import animanoirLogo from "../images/animanoir-oscar-a-montiel-logo.png";
 
 import * as styles from "./header.module.css";
 
@@ -34,6 +35,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
           </li>
         </ul>
       </nav>
+      <img src={animanoirLogo} alt="Óscar A. Montiel" className={styles.headerLogo} />
     </div>
   </div>
 );
